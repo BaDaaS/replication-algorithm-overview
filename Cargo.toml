@@ -28,6 +28,7 @@ members = [
     "0024-cheap-paxos",
     "0025-fast-paxos",
     "0026-generalized-paxos",
+    "0027-epaxos",
     "crates/sim",
 ]
 

@@ -1,0 +1,15 @@
+[package]
+name = "replication-0027-epaxos"
+version = "0.1.0"
+description = "Module 0027: EPaxos -- Egalitarian Paxos (Moraru et al. 2013)"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }
