@@ -71,6 +71,7 @@ members = [
     "0067-dumbo",
     "0068-speeding-dumbo",
     "0069-hashgraph",
+    "0070-aleph",
     "crates/sim",
 ]
 
