@@ -58,6 +58,7 @@ members = [
     "0054-bft-smart",
     "0055-tendermint",
     "0056-hotstuff",
+    "0057-librabft-diembft",
     "crates/sim",
 ]
 

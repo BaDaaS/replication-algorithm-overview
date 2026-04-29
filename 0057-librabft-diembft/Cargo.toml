@@ -1,0 +1,15 @@
+[package]
+name = "replication-0057-librabft-diembft"
+version = "0.1.0"
+description = "Module 0057: LibraBFT and DiemBFT (2019 to 2021)"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }
