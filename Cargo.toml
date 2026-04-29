@@ -25,6 +25,7 @@ members = [
     "0021-vr-revisited",
     "0022-paxos-synod",
     "0023-multi-paxos",
+    "0024-cheap-paxos",
     "crates/sim",
 ]
 
