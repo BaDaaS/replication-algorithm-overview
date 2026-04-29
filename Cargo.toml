@@ -55,6 +55,7 @@ members = [
     "0051-a2m-trinc",
     "0052-minbft",
     "0053-bft2f",
+    "0054-bft-smart",
     "crates/sim",
 ]
 
