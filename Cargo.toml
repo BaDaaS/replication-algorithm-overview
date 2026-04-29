@@ -43,6 +43,7 @@ members = [
     "0039-atlas",
     "0040-rampart",
     "0041-securering",
+    "0042-pbft",
     "crates/sim",
 ]
 
