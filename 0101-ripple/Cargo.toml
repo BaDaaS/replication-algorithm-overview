@@ -1,0 +1,15 @@
+[package]
+name = "replication-0101-ripple"
+version = "0.1.0"
+description = "Module 0101: Ripple Protocol Consensus Algorithm (Schwartz-Youngs-Britto 2014)"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }
