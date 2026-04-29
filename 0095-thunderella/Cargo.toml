@@ -1,0 +1,15 @@
+[package]
+name = "replication-0095-thunderella"
+version = "0.1.0"
+description = "Module 0095: Thunderella (Pass-Shi Eurocrypt 2018)"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }
