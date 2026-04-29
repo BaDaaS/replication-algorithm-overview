@@ -44,6 +44,7 @@ members = [
     "0040-rampart",
     "0041-securering",
     "0042-pbft",
+    "0043-qu",
     "crates/sim",
 ]
 
