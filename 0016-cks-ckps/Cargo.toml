@@ -1,0 +1,15 @@
+[package]
+name = "replication-0016-cks-ckps"
+version = "0.1.0"
+description = "Module 0016: Cachin-Kursawe-Shoup 2000 and CKPS 2001 async BFT"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }

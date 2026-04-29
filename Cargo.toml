@@ -17,6 +17,7 @@ members = [
     "0013-ben-or",
     "0014-rabin",
     "0015-bracha-aba",
+    "0016-cks-ckps",
     "crates/sim",
 ]
 
