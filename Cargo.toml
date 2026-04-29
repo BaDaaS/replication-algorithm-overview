@@ -115,6 +115,7 @@ members = [
     "0111-ouroboros-praos",
     "0112-ouroboros-genesis",
     "0113-ouroboros-crypsinous",
+    "0114-ouroboros-chronos",
     "crates/sim",
 ]
 
