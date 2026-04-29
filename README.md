@@ -91,9 +91,10 @@ for the generation specification and the full module list.
 | XIII  | Verifiable       | Verifiable replication and SNARK-friendly cons |
 | XIV   | Capstones        | Capstones, meta-theory, and open problems      |
 
-See [`HISTORY.md`](HISTORY.md) for the narrative timeline and
-[`lore/`](lore/) for shorter pieces (etymology, anecdotes,
-side-quests).
+See [`INDEX.md`](INDEX.md) for the complete list of all 136
+modules with links, [`HISTORY.md`](HISTORY.md) for the narrative
+timeline, and [`lore/`](lore/) for shorter pieces (etymology,
+anecdotes, side-quests).
 
 ## Prerequisites
 
