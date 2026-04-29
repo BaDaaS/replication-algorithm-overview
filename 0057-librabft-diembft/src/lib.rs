@@ -5,13 +5,13 @@
 /// `DiemBFT` major version (lineage tracker).
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Version {
-    /// LibraBFT 2019.
+    /// `LibraBFT` 2019.
     LibraV1,
-    /// DiemBFT v2 (2020): pacemaker improvements.
+    /// `DiemBFT` v2 (2020): pacemaker improvements.
     V2,
-    /// DiemBFT v3 (2020): Jolteon two-chain.
+    /// `DiemBFT` v3 (2020): Jolteon two-chain.
     V3,
-    /// DiemBFT v4 (2021): Quorum Store + Shoal.
+    /// `DiemBFT` v4 (2021): Quorum Store + Shoal.
     V4,
 }
 
