@@ -51,6 +51,7 @@ members = [
     "0047-upright",
     "0048-spinning",
     "0049-prime",
+    "0050-steward",
     "crates/sim",
 ]
 
