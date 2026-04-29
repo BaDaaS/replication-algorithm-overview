@@ -8,6 +8,7 @@ pub const LEADERS_PER_ROUND: u32 = 4;
 #[cfg(test)]
 mod tests {
     #[test]
+    #[allow(clippy::assertions_on_constants)]
     fn leaders() {
         assert!(super::LEADERS_PER_ROUND > 1);
     }
