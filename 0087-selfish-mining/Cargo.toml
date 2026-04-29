@@ -1,0 +1,15 @@
+[package]
+name = "replication-0087-selfish-mining"
+version = "0.1.0"
+description = "Module 0087: Selfish mining attack on Bitcoin (Eyal-Sirer 2014)"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }
