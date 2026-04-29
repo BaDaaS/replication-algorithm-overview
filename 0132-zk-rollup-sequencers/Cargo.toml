@@ -1,0 +1,15 @@
+[package]
+name = "replication-0132-zk-rollup-sequencers"
+version = "0.1.0"
+description = "Module 0132: zk-rollup sequencer consensus (StarkNet, Polygon zkEVM, etc.)"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }

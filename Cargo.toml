@@ -133,6 +133,7 @@ members = [
     "0129-tezos",
     "0130-zkbridge",
     "0131-aleo-snarkos",
+    "0132-zk-rollup-sequencers",
     "crates/sim",
 ]
 
