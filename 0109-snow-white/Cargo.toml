@@ -1,0 +1,15 @@
+[package]
+name = "replication-0109-snow-white"
+version = "0.1.0"
+description = "Module 0109: Snow White robustly-reconfigurable PoS (Daian-Pass-Shi 2019)"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }
