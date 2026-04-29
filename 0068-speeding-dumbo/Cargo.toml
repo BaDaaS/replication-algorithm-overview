@@ -1,0 +1,15 @@
+[package]
+name = "replication-0068-speeding-dumbo"
+version = "0.1.0"
+description = "Module 0068: Speeding Dumbo (Guo et al. 2022)"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }

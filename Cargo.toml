@@ -69,6 +69,7 @@ members = [
     "0065-honeybadger",
     "0066-beat",
     "0067-dumbo",
+    "0068-speeding-dumbo",
     "crates/sim",
 ]
 
