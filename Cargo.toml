@@ -127,6 +127,7 @@ members = [
     "0123-sui",
     "0124-hedera",
     "0125-near",
+    "0126-internet-computer",
     "crates/sim",
 ]
 
