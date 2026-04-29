@@ -1,0 +1,15 @@
+[package]
+name = "replication-0060-streamlet"
+version = "0.1.0"
+description = "Module 0060: Streamlet (Chan-Pass-Shi 2020)"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }

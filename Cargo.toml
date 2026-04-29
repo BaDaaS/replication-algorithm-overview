@@ -61,6 +61,7 @@ members = [
     "0057-librabft-diembft",
     "0058-jolteon",
     "0059-hotstuff-2",
+    "0060-streamlet",
     "crates/sim",
 ]
 
