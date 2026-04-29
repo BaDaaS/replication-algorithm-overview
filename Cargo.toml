@@ -111,6 +111,7 @@ members = [
     "0107-casper-cbc",
     "0108-algorand",
     "0109-snow-white",
+    "0110-ouroboros-classic",
     "crates/sim",
 ]
 
