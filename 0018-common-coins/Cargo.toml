@@ -1,0 +1,15 @@
+[package]
+name = "replication-0018-common-coins"
+version = "0.1.0"
+description = "Module 0018: Common-coin constructions"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }
