@@ -81,6 +81,7 @@ members = [
     "0077-mahi-mahi",
     "0078-sailfish",
     "0079-shoal-plus-plus",
+    "0080-autobahn",
     "crates/sim",
 ]
 
