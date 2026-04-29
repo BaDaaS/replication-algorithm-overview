@@ -1,0 +1,15 @@
+[package]
+name = "replication-0019-2pc-3pc"
+version = "0.1.0"
+description = "Module 0019: Two-phase and three-phase commit"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }
