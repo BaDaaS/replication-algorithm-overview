@@ -1,0 +1,15 @@
+[package]
+name = "replication-0105-slasher"
+version = "0.1.0"
+description = "Module 0105: Slasher early Proof of Stake (Buterin 2014)"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }

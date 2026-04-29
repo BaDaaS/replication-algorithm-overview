@@ -106,6 +106,7 @@ members = [
     "0102-avalanche",
     "0103-snowman",
     "0104-frosty",
+    "0105-slasher",
     "crates/sim",
 ]
 
