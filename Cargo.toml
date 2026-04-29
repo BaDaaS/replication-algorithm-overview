@@ -50,6 +50,7 @@ members = [
     "0046-aardvark",
     "0047-upright",
     "0048-spinning",
+    "0049-prime",
     "crates/sim",
 ]
 
