@@ -97,6 +97,7 @@ members = [
     "0093-fruitchains",
     "0094-spectre",
     "0095-thunderella",
+    "0096-phantom",
     "crates/sim",
 ]
 
