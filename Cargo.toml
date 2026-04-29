@@ -18,6 +18,7 @@ members = [
     "0014-rabin",
     "0015-bracha-aba",
     "0016-cks-ckps",
+    "0017-mmr",
     "crates/sim",
 ]
 
