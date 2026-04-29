@@ -1,14 +1,14 @@
-//! Module 0047: UpRight hybrid fault tolerance helpers.
+//! Module 0047: `UpRight` hybrid fault tolerance helpers.
 
 #![warn(missing_docs)]
 
-/// UpRight required `n` for `u` Byzantine + `r` crash.
+/// `UpRight` required `n` for `u` Byzantine + `r` crash.
 #[must_use]
 pub fn min_n(u: usize, r: usize) -> usize {
     2 * u + r + 1
 }
 
-/// UpRight quorum.
+/// `UpRight` quorum.
 #[must_use]
 pub fn quorum(u: usize, r: usize) -> usize {
     u + r + 1
