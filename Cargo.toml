@@ -75,6 +75,7 @@ members = [
     "0071-dag-rider",
     "0072-narwhal-tusk",
     "0073-bullshark",
+    "0074-cordial-miners",
     "crates/sim",
 ]
 
