@@ -1,0 +1,16 @@
+[package]
+name = "replication-0013-ben-or"
+version = "0.1.0"
+description = "Module 0013: Ben-Or 1983 randomised async consensus"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+rand = { workspace = true }
+sim = { workspace = true }
