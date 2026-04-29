@@ -124,6 +124,7 @@ members = [
     "0120-polkadot",
     "0121-solana",
     "0122-aptos",
+    "0123-sui",
     "crates/sim",
 ]
 
