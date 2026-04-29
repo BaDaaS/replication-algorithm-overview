@@ -11,7 +11,7 @@ pub struct PreOrder {
 
 impl PreOrder {
     /// Verify that `primary_order` respects this pre-order
-    /// (every prefix of pending must appear in primary_order
+    /// (every prefix of pending must appear in `primary_order`
     /// in the same relative order).
     #[must_use]
     pub fn respects(&self, primary_order: &[u32]) -> bool {
