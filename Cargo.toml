@@ -9,6 +9,7 @@ members = [
     "0005-flp-impossibility",
     "0006-dolev-strong",
     "0007-dolev-reischuk",
+    "0008-cap-pacelc",
     "crates/sim",
 ]
 

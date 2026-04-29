@@ -1,0 +1,15 @@
+[package]
+name = "replication-0008-cap-pacelc"
+version = "0.1.0"
+description = "Module 0008: CAP and PACELC trade-offs"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }
