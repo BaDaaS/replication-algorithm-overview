@@ -134,6 +134,19 @@ ideas are reflected in:
 - *Aptos / Sui.* PoS committee + leader-based BFT.
 - *Cosmos / Polkadot.* Validator sets with BFT consensus.
 
+### Mining algorithm (proof-of-work function)
+
+ByzCoin's PoW key blocks use double-SHA-256, identical to
+Bitcoin's substrate. The choice was deliberate: ByzCoin was
+designed to be a *backward-compatible* extension to Bitcoin
+where key blocks are valid Bitcoin headers, letting honest
+Bitcoin miners gradually opt in without splitting the chain.
+The CoSi-based microblock signing is the only addition.
+
+Other PoW + committee-BFT designs in the same family use
+their underlying chain's hash (e.g., Solida, Hybrid Consensus,
+Thunderella).
+
 ## Verifiability and circuit encoding
 
 **tag: `partial`.**

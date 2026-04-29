@@ -132,6 +132,22 @@ Bitcoin-NG influenced:
 - Poison-tx detection requires storing all signed microblocks
   for at least one epoch.
 
+### Mining algorithm (proof-of-work function)
+
+The original Bitcoin-NG paper uses Bitcoin's double-SHA-256
+PoW for key-block puzzles (the slow path); microblocks are
+signature-only and require no PoW. Production-derived
+deployments adopted the underlying chain's hash function:
+
+- *Aeternity* (Bitcoin-NG-inspired). Cuckoo Cycle PoW for
+  key blocks, Schnorr signatures for microblocks.
+- *Waves NG.* Inherits Waves's stake-weighted PoS leadership
+  for key blocks (no PoW puzzle).
+
+Bitcoin-NG is largely orthogonal to the choice of PoW
+function; any Nakamoto-style hash works for the key-block
+layer.
+
 ## Verifiability and circuit encoding
 
 **tag: `partial`.**

@@ -109,6 +109,23 @@ Thunderella has not been deployed verbatim. Its ideas appear in:
 - Accelerator slashing or stake-loss is the typical disincentive
   against misbehaviour.
 
+### Mining algorithm (proof-of-work function)
+
+Thunderella's slow-path chain layer is generic: any
+Sybil-resistant chain protocol satisfying GKL backbone
+properties suffices. In a PoW instantiation:
+
+- *Bitcoin-anchored.* Double-SHA-256.
+- *Ethereum-anchored.* Ethash (Ethereum pre-Merge).
+- *Custom chain.* Any cryptographic hash modelled as a random
+  oracle.
+
+A PoS instantiation replaces PoW entirely with a VRF-based
+slot lottery (Praos, Snow White). The accelerator's signature
+scheme is independent of the chain-layer hash; production
+designs typically use BLS-aggregate threshold signatures
+(BLS12-381) for the optimistic fast path.
+
 ## Verifiability and circuit encoding
 
 **tag: `partial`.**

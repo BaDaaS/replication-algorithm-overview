@@ -139,6 +139,27 @@ a constant factor of propagation delay.
   blocks within a proposer block can be canonical (by hash) or
   arbitrary (proposer's choice).
 
+### Mining algorithm (proof-of-work function)
+
+Prism uses *one* PoW function (double-SHA-256 in the paper's
+prototype) shared across all three block types. The trick: a
+single mining attempt produces a 256-bit hash, which is then
+*sorted into one of the three block roles* by examining
+specific bit ranges:
+
+- Bits 0-7 below proposer-target threshold => proposer block.
+- Bits 0-15 below voter-target threshold => voter block.
+- Bits 0-23 below tx-target threshold => transaction block.
+
+Targets are calibrated so block / voter / tx fractions match
+the protocol's expected ratios. This *unified mining* design
+avoids requiring miners to pick a role: one hash effort
+contributes to whatever role its output happens to satisfy.
+
+The Prism paper does not propose a custom hash; double-SHA-256
+inherits Bitcoin's well-understood security analysis and
+existing ASIC ecosystem.
+
 ## Verifiability and circuit encoding
 
 **tag: `partial`.**

@@ -120,6 +120,19 @@ ordering using DAG-traversal heuristics.
   of GHOSTDAG (a PHANTOM/SPECTRE successor).
 - *Aleph Zero (module 0070).* DAG-BFT in production.
 
+### Mining algorithm (proof-of-work function)
+
+The original SPECTRE paper specifies double-SHA-256 (Bitcoin's
+substrate) for the block puzzle. Sompolinsky et al. positioned
+SPECTRE as a Bitcoin-compatible drop-in: the underlying hash
+function need not change for SPECTRE's pairwise-voting rule
+to work.
+
+In production, SPECTRE itself was not deployed; its successor
+*GHOSTDAG* (used by Kaspa, module 0096) replaced SHA-256 with
+*kHeavyHash* (Keccak + matrix multiply) for higher block-rate
+verification efficiency.
+
 ## Verifiability and circuit encoding
 
 **tag: `partial`.**

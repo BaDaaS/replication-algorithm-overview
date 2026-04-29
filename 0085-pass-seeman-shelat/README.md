@@ -132,6 +132,30 @@ discussing security margins. Key practical implications:
   on `f * Delta`; higher `f * Delta` means higher required
   honest fraction.
 
+### Mining algorithm (proof-of-work function)
+
+The PSS analysis is *agnostic* to the choice of hash function:
+the random-oracle model abstracts SHA-256, Ethash, RandomX,
+kHeavyHash, and others into the same primitive. The bound
+depends only on `alpha`, `f`, and `Delta`, not on the specific
+hash construction.
+
+In production analyses, PSS-style bounds are evaluated for:
+
+| chain          | hash       | block interval | typical Delta |
+| -------------- | ---------- | -------------- | ------------- |
+| Bitcoin        | SHA-256    | 600 sec        | ~10 sec       |
+| Litecoin       | Scrypt     | 150 sec        | ~10 sec       |
+| Dogecoin       | Scrypt     | 60 sec         | ~10 sec       |
+| Ethereum (pre) | Ethash     | 13 sec         | ~3-6 sec      |
+| Conflux        | Octopus    | 0.5 sec        | ~0.5-1 sec    |
+| Kaspa          | kHeavyHash | 1 sec          | ~0.5-1 sec    |
+
+Higher block rates (`f` larger) and lower propagation delay
+(`Delta` smaller) keep `f * Delta` bounded. Kaspa's choice of
+1-second blocks paired with a low-`Delta` propagation network
+is a deliberate PSS-aware design.
+
 ## Verifiability and circuit encoding
 
 **tag: `partial`.**

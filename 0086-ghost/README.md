@@ -133,6 +133,34 @@ similar idea (Praos with weak forks).
 - Re-org prevention: clients prefer not to re-org if a
   competing branch appears too late.
 
+### Mining algorithm (proof-of-work function)
+
+Ethereum (pre-Merge, 2015 to 2022) ran *Ethash*: a memory-hard
+hash function combining Keccak-256 (SHA-3) with a 1-2 GB DAG
+("epoch dataset") that miners had to keep in memory. Ethash
+was designed to be ASIC-resistant by being bandwidth-bound
+rather than compute-bound; the DAG forced miners to use
+high-bandwidth GPU memory rather than custom silicon. ASICs
+eventually appeared (Bitmain E3, Innosilicon A10) but the
+performance gap over commodity GPUs stayed within ~3-5x.
+
+Ethereum Classic (after the Ethereum/ETC fork in 2016)
+continued running the Ethash family. After Ethereum's
+move to PoS in 2022, ETC kept PoW under a slightly modified
+*Etchash* with a larger DAG to invalidate existing Ethereum
+ASICs.
+
+Conflux (module 0099) uses *Octopus*, an Ethash-derived
+memory-hard hash function adapted for the tree-graph block
+structure.
+
+| chain               | hash function | DAG size | block time |
+| ------------------- | ------------- | -------- | ---------- |
+| Ethereum (pre-Merge) | Ethash       | ~5 GB    | 13 sec     |
+| Ethereum Classic    | Etchash       | ~6 GB    | 13 sec     |
+| Conflux             | Octopus       | ~5 GB    | 0.5 sec    |
+| Ravencoin           | KAWPOW        | ~3 GB    | 1 min      |
+
 ## Verifiability and circuit encoding
 
 **tag: `partial`.**

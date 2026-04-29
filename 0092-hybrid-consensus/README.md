@@ -113,6 +113,22 @@ Its impact is via:
 - *DiemBFT* (module 0057). Permissioned BFT with reconfiguration.
 - *Aptos / Sui.* PoS chain layer + BFT consensus.
 
+### Mining algorithm (proof-of-work function)
+
+Hybrid Consensus is *generic* over the chain layer's
+Sybil-resistance mechanism. The framework accepts:
+
+- *PoW chains.* Any random-oracle hash (Bitcoin double-SHA-256,
+  Ethereum Ethash, Kaspa kHeavyHash) for the chain layer.
+- *PoS chains.* VRF-based slot lotteries (Praos, Snow White)
+  replace PoW entirely.
+
+The original paper analyses both instantiations. The choice of
+hash function is opaque to Hybrid Consensus's reduction
+proofs: as long as the underlying chain satisfies GKL
+backbone properties (CP, CG, CQ), the BFT overlay inherits
+them.
+
 ### Production-implementation notes
 
 - The committee size `c` must balance security (large `c`

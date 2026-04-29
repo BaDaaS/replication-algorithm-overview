@@ -112,6 +112,16 @@ implementations would use HotStuff or DAG-BFT inside the
 committee, retaining the PoW outer loop only as a Sybil-
 resistance gate.
 
+### Mining algorithm (proof-of-work function)
+
+Solida's PoW outer loop assumes Bitcoin-style double-SHA-256;
+the paper does not propose a custom hash function. Any
+collision-resistant hash modelled as a random oracle satisfies
+the security analysis. In a hypothetical deployment, the hash
+function would typically inherit from the chain Solida is
+built on (e.g., double-SHA-256 if Bitcoin-anchored, Ethash if
+Ethereum-anchored).
+
 ## Verifiability and circuit encoding
 
 **tag: `partial`.**

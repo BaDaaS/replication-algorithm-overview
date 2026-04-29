@@ -118,6 +118,29 @@ version, used by Kaspa.
 - GHOSTDAG performance: per-block coloring is `O(\|B\| * k)`;
   becomes a bottleneck for large DAGs.
 
+### Mining algorithm (proof-of-work function)
+
+The PHANTOM/GHOSTDAG papers describe the protocol abstractly
+over any cryptographic hash; production deployments differ in
+their hash-function choice:
+
+- *Kaspa* uses *kHeavyHash*: a custom GPU-friendly function
+  combining Keccak-256 with a deterministic 64x64 matrix
+  multiplication over the prime field `2^16 - 17`. The matrix
+  step is bandwidth-bound but ASIC-tractable; Kaspa explicitly
+  accepts ASIC mining (Bitmain KS series, Iceriver KS series
+  shipped 2024) as the fastest path to network security. Block
+  rate is ~1 block per second, making per-block hash speed less
+  important than aggregate throughput.
+- *Sedra* and *Spectre Project* (Kaspa forks) use kHeavyHash
+  variants with tweaked matrix dimensions.
+
+PHANTOM as originally specified would also work over
+double-SHA-256 (Bitcoin's substrate); the choice of
+kHeavyHash in Kaspa reflects production-engineering
+trade-offs (1-second blocks need fast verification) rather
+than a property of the consensus algorithm itself.
+
 ## Verifiability and circuit encoding
 
 **tag: `partial`.**

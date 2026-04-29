@@ -119,14 +119,34 @@ Ethereum smart contracts) combined with high throughput.
 - EVM compatibility: Conflux uses an Ethereum-derived state
   model with conflict-free parallel execution within an epoch.
 
+### Mining algorithm (proof-of-work function)
+
+Conflux uses *Octopus*, a memory-hard PoW function adapted
+from Ethash (module 0086). Octopus retains Ethash's DAG-based
+memory-hard structure (~5 GB epoch dataset, refreshed every
+~3 days) but tweaks the inner mixing function to be
+incompatible with existing Ethereum/ETC ASICs.
+
+Octopus inherits Ethash's design rationale: bandwidth-bound
+verification favours commodity GPUs, keeping mining
+participation broad. The memory cost also discourages mining
+pools from optimising via custom silicon during the early
+network phase.
+
+| chain    | hash function | DAG | block rate |
+| -------- | ------------- | --- | ---------- |
+| Conflux  | Octopus       | yes | ~2 blocks/s (incl. tipset) |
+
 ## Verifiability and circuit encoding
 
 **tag: `partial`.**
 
-Conflux circuits encode SHA-256 PoW per block (~30k
-constraints), tree-graph traversal (similar to GHOST), and
-epoch-block topological sorting. Total cost is comparable to a
-GHOST circuit plus a Merkle proof per reference edge.
+Conflux circuits encode Octopus PoW per block (Keccak-256 +
+DAG memory access; substantially more expensive than SHA-256
+in a SNARK due to the memory-access pattern), tree-graph
+traversal (similar to GHOST), and epoch-block topological
+sorting. Total cost exceeds a GHOST + SHA-256 circuit by the
+DAG-access overhead.
 
 A SNARK light client for Conflux can prove only the pivot
 chain (cheap, like a Bitcoin SNARK light client); transaction

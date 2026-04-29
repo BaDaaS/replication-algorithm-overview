@@ -118,6 +118,29 @@ ideas have been adapted in:
   canonical chain post-confirmation, complicating SPV-style
   light clients.
 
+### Mining algorithm (proof-of-work function)
+
+FruitChains uses *two* PoW puzzles per round, both based on
+double-SHA-256 (Bitcoin's substrate):
+
+- *Block puzzle.* Same target as Bitcoin (~2^32 expected hash
+  attempts, ~10-minute interval). Determines chain ordering.
+- *Fruit puzzle.* Higher target by a factor of `~100`
+  (~10-second expected interval). Each fruit references a
+  recent block as its stem.
+
+A miner mines both simultaneously: each hash attempt produces
+a single output that may satisfy the fruit target (more
+common), the block target (rarer), or neither. This shared
+hashing means honest miners pay no extra computational cost
+for the dual-puzzle structure beyond the fruit's reduced
+difficulty.
+
+Pass-Shi do not propose a custom hash function; any
+collision-resistant hash modelled as a random oracle suffices.
+SHA-256 is the natural default given FruitChains's positioning
+as a Bitcoin enhancement.
+
 ## Verifiability and circuit encoding
 
 **tag: `partial`.**

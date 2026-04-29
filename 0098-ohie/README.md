@@ -116,6 +116,24 @@ performance trade-off it makes explicit.
 - Cross-chain transactions: OHIE does not natively support
   atomic cross-chain transfers; an L2 mechanism is required.
 
+### Mining algorithm (proof-of-work function)
+
+OHIE uses double-SHA-256 (Bitcoin's substrate). A single
+mining attempt produces one hash; the *low-order bits* of the
+hash determine which of the `m` chains it would extend (chain
+index = `hash mod m`), and the remaining bits determine
+whether it satisfies that chain's target.
+
+This means each hashing attempt has probability `1/m` of
+addressing any specific chain, but probability `1` of
+addressing some chain. Total honest hash power is therefore
+distributed evenly across chains by construction; no miner
+needs to choose which chain to target.
+
+The Yu et al. paper does not propose a custom hash; SHA-256
+inherits Bitcoin's security analysis. Any collision-resistant
+hash would suffice for the per-chain CP/CG/CQ proofs.
+
 ## Verifiability and circuit encoding
 
 **tag: `partial`.**

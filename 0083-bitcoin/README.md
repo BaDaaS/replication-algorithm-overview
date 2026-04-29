@@ -128,6 +128,48 @@ hashing power.
 - *Ethereum (until 2022).* Pre-Merge ran a GHOST variant
   (module 0086).
 
+### Mining algorithm (proof-of-work function)
+
+Bitcoin's PoW puzzle is `sha256(sha256(header)) <
+difficulty_target`: the *double-SHA-256* hash of the
+80-byte block header must be numerically smaller than the
+current target. SHA-256 was chosen for three reasons: NIST
+standardisation (auditability), efficient ASIC implementation
+(making it a stable substrate), and well-understood collision
+resistance. Hashing the SHA-256 output a second time
+("double-SHA-256") was Nakamoto's belt-and-braces precaution
+against length-extension attacks on the Merkle-Damgard
+construction.
+
+Other Nakamoto-style chains use different hash functions,
+each chosen for a specific design goal:
+
+| chain                | hash function     | design goal                            |
+| -------------------- | ----------------- | -------------------------------------- |
+| Bitcoin              | double-SHA-256    | efficient ASIC; hardware specialisation |
+| Bitcoin Cash, BSV    | double-SHA-256    | inherit Bitcoin substrate               |
+| Litecoin             | Scrypt            | memory-hardness vs ASIC (early goal)    |
+| Dogecoin             | Scrypt            | merge-mined with Litecoin               |
+| Monero               | RandomX           | CPU-friendly; ASIC-resistant by design  |
+| Zcash                | Equihash          | memory-hard; egalitarian mining         |
+| Ravencoin            | KAWPOW            | GPU-only; ASIC-resistant                |
+| Ethereum (pre-Merge) | Ethash            | DAG-based memory-hard (module 0086)     |
+| Ethereum Classic     | Etchash           | Ethash variant, larger DAG              |
+| Conflux              | Octopus           | Ethash-derived (module 0099)            |
+| Kaspa                | kHeavyHash        | matrix-mul; GPU-friendly (module 0096)  |
+| Grin, Beam           | Cuckoo Cycle      | graph problem; bandwidth-hard           |
+| Handshake            | BLAKE2b + SHA3-256 | naming-system-specific                  |
+| Siacoin              | Blake2b           | storage-chain-specific                  |
+| Decred               | BLAKE-256         | hybrid PoW/PoS substrate                |
+
+ASIC-resistance is the most common motivation for deviating
+from SHA-256: Scrypt (initial), RandomX, KAWPOW, and Cuckoo
+Cycle were all designed to make custom-silicon mining
+uneconomical. In practice, every "ASIC-resistant" function
+has eventually been ASIC-mined; RandomX (Monero) is the
+closest to holding the line via deliberate CPU-friendly
+opcodes that resist FPGA/ASIC speedup.
+
 ### Why Nakamoto's design was a breakthrough
 
 Pre-2008 BFT could not work in open membership: identity
