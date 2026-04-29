@@ -1,0 +1,15 @@
+[package]
+name = "replication-0051-a2m-trinc"
+version = "0.1.0"
+description = "Module 0051: A2M and TrInc trusted hardware (Chun 2007, Levin 2009)"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }
