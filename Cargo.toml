@@ -8,6 +8,7 @@ members = [
     "0004-byzantine-generals",
     "0005-flp-impossibility",
     "0006-dolev-strong",
+    "0007-dolev-reischuk",
     "crates/sim",
 ]
 

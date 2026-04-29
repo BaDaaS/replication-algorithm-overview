@@ -1,0 +1,15 @@
+[package]
+name = "replication-0007-dolev-reischuk"
+version = "0.1.0"
+description = "Module 0007: Dolev-Reischuk message-complexity lower bound"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }
