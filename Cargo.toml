@@ -134,6 +134,7 @@ members = [
     "0130-zkbridge",
     "0131-aleo-snarkos",
     "0132-zk-rollup-sequencers",
+    "0133-threshold-crypto-in-circuit",
     "crates/sim",
 ]
 
