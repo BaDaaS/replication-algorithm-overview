@@ -1,0 +1,15 @@
+[package]
+name = "replication-0131-aleo-snarkos"
+version = "0.1.0"
+description = "Module 0131: Aleo snarkOS AleoBFT (Aleo Systems 2024)"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }

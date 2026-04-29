@@ -132,6 +132,7 @@ members = [
     "0128-hyperledger-fabric",
     "0129-tezos",
     "0130-zkbridge",
+    "0131-aleo-snarkos",
     "crates/sim",
 ]
 
