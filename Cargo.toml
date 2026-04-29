@@ -67,6 +67,7 @@ members = [
     "0063-sbft",
     "0064-ditto",
     "0065-honeybadger",
+    "0066-beat",
     "crates/sim",
 ]
 
