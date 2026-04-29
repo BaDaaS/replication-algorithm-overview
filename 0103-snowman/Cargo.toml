@@ -1,0 +1,15 @@
+[package]
+name = "replication-0103-snowman"
+version = "0.1.0"
+description = "Module 0103: Snowman linear-chain Avalanche (Yin Sirer Lab 2020)"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }
