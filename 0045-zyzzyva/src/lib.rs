@@ -19,7 +19,7 @@ pub enum ClientDecision {
 pub fn classify(matched: usize, n: usize, f: usize) -> ClientDecision {
     if matched == n {
         ClientDecision::FastCommit
-    } else if matched >= 2 * f + 1 {
+    } else if matched > 2 * f {
         ClientDecision::SlowCommit
     } else {
         ClientDecision::Fallback
