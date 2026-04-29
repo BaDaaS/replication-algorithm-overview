@@ -160,9 +160,9 @@ missing_panics_doc = "allow"
 
 [workspace.dependencies]
 proptest = "1.11.0"
-rand = "0.9.4"
-rand_chacha = "0.9.0"
-sha2 = "0.10.9"
+rand = "0.10.1"
+rand_chacha = "0.10.0"
+sha2 = "0.11.0"
 sim = { path = "crates/sim" }
 thiserror = "2.0.18"
 
