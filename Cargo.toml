@@ -13,6 +13,7 @@ members = [
     "0009-broadcasts",
     "0010-quorum-systems",
     "0011-crypto-prereqs",
+    "0012-failure-detectors",
     "crates/sim",
 ]
 
