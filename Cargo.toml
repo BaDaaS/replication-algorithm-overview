@@ -21,6 +21,7 @@ members = [
     "0017-mmr",
     "0018-common-coins",
     "0019-2pc-3pc",
+    "0020-viewstamped-replication",
     "crates/sim",
 ]
 
