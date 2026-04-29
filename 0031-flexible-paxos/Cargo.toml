@@ -1,0 +1,15 @@
+[package]
+name = "replication-0031-flexible-paxos"
+version = "0.1.0"
+description = "Module 0031: Flexible Paxos (Howard-Malkhi-Spiegelman 2016)"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }
