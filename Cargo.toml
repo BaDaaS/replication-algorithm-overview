@@ -85,6 +85,7 @@ members = [
     "0081-bbca-chain",
     "0082-motorway",
     "0083-bitcoin",
+    "0084-bitcoin-backbone",
     "crates/sim",
 ]
 
