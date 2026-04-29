@@ -1,0 +1,19 @@
+[package]
+name = "replication-0001-system-models"
+version = "0.1.0"
+description = "Module 0001: System models -- synchrony, partial synchrony, asynchrony"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+rand = { workspace = true }
+sim = { workspace = true }
+
+[dev-dependencies]
+proptest = { workspace = true }

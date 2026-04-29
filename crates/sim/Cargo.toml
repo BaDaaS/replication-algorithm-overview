@@ -1,0 +1,20 @@
+[package]
+name = "sim"
+version = "0.1.0"
+description = "Deterministic distributed-system simulator for the replication-algorithm-overview course"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+rand = { workspace = true }
+rand_chacha = { workspace = true }
+thiserror = { workspace = true }
+
+[dev-dependencies]
+proptest = { workspace = true }
