@@ -62,6 +62,7 @@ members = [
     "0058-jolteon",
     "0059-hotstuff-2",
     "0060-streamlet",
+    "0061-pala-pili",
     "crates/sim",
 ]
 
