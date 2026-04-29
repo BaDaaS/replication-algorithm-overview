@@ -1,0 +1,15 @@
+[package]
+name = "replication-0053-bft2f"
+version = "0.1.0"
+description = "Module 0053: BFT2F (Li-Mazieres 2007)"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }
