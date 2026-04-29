@@ -29,6 +29,7 @@ members = [
     "0025-fast-paxos",
     "0026-generalized-paxos",
     "0027-epaxos",
+    "0028-mencius",
     "crates/sim",
 ]
 
