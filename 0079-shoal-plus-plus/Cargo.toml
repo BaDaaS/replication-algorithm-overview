@@ -1,0 +1,15 @@
+[package]
+name = "replication-0079-shoal-plus-plus"
+version = "0.1.0"
+description = "Module 0079: Shoal++ (Aptos 2024)"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }

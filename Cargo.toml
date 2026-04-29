@@ -80,6 +80,7 @@ members = [
     "0076-mysticeti",
     "0077-mahi-mahi",
     "0078-sailfish",
+    "0079-shoal-plus-plus",
     "crates/sim",
 ]
 
