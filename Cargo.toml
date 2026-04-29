@@ -130,6 +130,7 @@ members = [
     "0126-internet-computer",
     "0127-filecoin",
     "0128-hyperledger-fabric",
+    "0129-tezos",
     "crates/sim",
 ]
 
