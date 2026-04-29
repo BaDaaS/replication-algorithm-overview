@@ -1,0 +1,15 @@
+[package]
+name = "replication-0004-byzantine-generals"
+version = "0.1.0"
+description = "Module 0004: Byzantine Generals (Pease-Shostak-Lamport 1980; Lamport-Shostak-Pease 1982)"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }
