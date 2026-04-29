@@ -1,4 +1,4 @@
-//! Module 0056: HotStuff types -- block + quorum certificate.
+//! Module 0056: `HotStuff` types -- block + quorum certificate.
 
 #![warn(missing_docs)]
 
@@ -11,7 +11,7 @@ pub struct QuorumCert {
     pub block_hash: u64,
 }
 
-/// HotStuff block.
+/// `HotStuff` block.
 #[derive(Clone, Debug)]
 pub struct Block {
     /// Parent block hash.
@@ -24,7 +24,7 @@ pub struct Block {
     pub height: u32,
 }
 
-/// HotStuff phase.
+/// `HotStuff` phase.
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Phase {
     /// Prepare.
