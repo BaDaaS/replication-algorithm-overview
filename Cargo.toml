@@ -118,6 +118,7 @@ members = [
     "0114-ouroboros-chronos",
     "0115-ouroboros-leios",
     "0116-ouroboros-peras",
+    "0117-mina-samasika",
     "crates/sim",
 ]
 
