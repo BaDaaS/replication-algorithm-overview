@@ -5,9 +5,9 @@
 /// Autobahn consensus topology.
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Topology {
-    /// Linear (single-leader, like HotStuff).
+    /// Linear (single-leader, like `HotStuff`).
     Linear,
-    /// DAG (wave-anchor, like Bullshark).
+    /// DAG (wave-anchor, like `Bullshark`).
     Dag,
 }
 
