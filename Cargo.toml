@@ -136,6 +136,7 @@ members = [
     "0132-zk-rollup-sequencers",
     "0133-threshold-crypto-in-circuit",
     "0134-modular-blockchain",
+    "0135-open-problems",
     "crates/sim",
 ]
 
