@@ -53,6 +53,7 @@ members = [
     "0049-prime",
     "0050-steward",
     "0051-a2m-trinc",
+    "0052-minbft",
     "crates/sim",
 ]
 
