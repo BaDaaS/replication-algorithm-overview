@@ -8,7 +8,7 @@
 
 #![warn(missing_docs)]
 
-use rand::Rng;
+use rand::RngExt;
 use sim::{Envelope, NodeId, Process, StepCtx};
 
 /// Wire message type.

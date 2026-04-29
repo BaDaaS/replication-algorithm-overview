@@ -16,7 +16,7 @@
 use std::collections::{BTreeMap, BTreeSet};
 use std::fmt::Debug;
 
-use rand::Rng;
+use rand::RngExt;
 use sim::{Adversary, Envelope, NodeId, SimRng, Time};
 
 // =====================================================================

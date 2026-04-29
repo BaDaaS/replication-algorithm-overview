@@ -1,0 +1,47 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Write",
+      "Edit",
+      "Glob",
+      "Grep",
+      "Bash(cargo *)",
+      "Bash(cargo)",
+      "Bash(rustc *)",
+      "Bash(rustup *)",
+      "Bash(rustfmt *)",
+      "Bash(clippy *)",
+      "Bash(make *)",
+      "Bash(make)",
+      "Bash(git *)",
+      "Bash(gh *)",
+      "Bash(mkdir *)",
+      "Bash(ls *)",
+      "Bash(touch *)",
+      "Bash(cp *)",
+      "Bash(mv *)",
+      "Bash(cat *)",
+      "Bash(echo *)",
+      "Bash(pwd)",
+      "Bash(which *)",
+      "Bash(test *)",
+      "Bash(find *)",
+      "Bash(wc *)",
+      "Bash(sort *)",
+      "Bash(head *)",
+      "Bash(tail *)",
+      "Bash(diff *)",
+      "Bash(tree *)",
+      "Bash(npx prettier *)",
+      "Bash(npx *)"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(git push --force *)",
+      "Bash(git push -f *)",
+      "Bash(git reset --hard *)",
+      "Bash(git clean -f*)"
+    ]
+  }
+}

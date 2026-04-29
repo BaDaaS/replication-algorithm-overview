@@ -9,7 +9,7 @@
 
 use std::fmt::Debug;
 
-use rand::Rng;
+use rand::RngExt;
 use sim::{Adversary, Envelope, SimRng, Time};
 
 // =====================================================================
