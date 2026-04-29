@@ -33,6 +33,7 @@ members = [
     "0029-stoppable-vertical-paxos",
     "0030-disk-paxos",
     "0031-flexible-paxos",
+    "0032-compartmentalized-paxos",
     "crates/sim",
 ]
 
