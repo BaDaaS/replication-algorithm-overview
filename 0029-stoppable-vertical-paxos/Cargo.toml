@@ -1,0 +1,15 @@
+[package]
+name = "replication-0029-stoppable-vertical-paxos"
+version = "0.1.0"
+description = "Module 0029: Stoppable and Vertical Paxos"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }
