@@ -121,6 +121,7 @@ members = [
     "0117-mina-samasika",
     "0118-gasper",
     "0119-cosmos-cometbft",
+    "0120-polkadot",
     "crates/sim",
 ]
 
