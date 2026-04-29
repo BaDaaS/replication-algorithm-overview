@@ -5,7 +5,7 @@
 /// BEAT variant.
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Variant {
-    /// BEAT0: direct HoneyBadger refinement.
+    /// BEAT0: direct `HoneyBadger` refinement.
     B0,
     /// BEAT1: latency for bandwidth.
     B1,
