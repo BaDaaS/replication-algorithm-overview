@@ -1,4 +1,4 @@
-//! Module 0041: SecureRing -- ring-topology helpers.
+//! Module 0041: `SecureRing` -- ring-topology helpers.
 
 #![warn(missing_docs)]
 
