@@ -117,6 +117,7 @@ members = [
     "0113-ouroboros-crypsinous",
     "0114-ouroboros-chronos",
     "0115-ouroboros-leios",
+    "0116-ouroboros-peras",
     "crates/sim",
 ]
 
