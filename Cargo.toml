@@ -24,6 +24,7 @@ members = [
     "0020-viewstamped-replication",
     "0021-vr-revisited",
     "0022-paxos-synod",
+    "0023-multi-paxos",
     "crates/sim",
 ]
 

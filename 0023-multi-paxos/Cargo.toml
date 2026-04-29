@@ -1,0 +1,15 @@
+[package]
+name = "replication-0023-multi-paxos"
+version = "0.1.0"
+description = "Module 0023: Multi-Paxos and Paxos Made Simple"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }
