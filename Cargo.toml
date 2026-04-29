@@ -99,6 +99,7 @@ members = [
     "0095-thunderella",
     "0096-phantom",
     "0097-prism",
+    "0098-ohie",
     "crates/sim",
 ]
 
