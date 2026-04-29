@@ -83,6 +83,7 @@ members = [
     "0079-shoal-plus-plus",
     "0080-autobahn",
     "0081-bbca-chain",
+    "0082-motorway",
     "crates/sim",
 ]
 

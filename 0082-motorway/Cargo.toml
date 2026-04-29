@@ -1,0 +1,15 @@
+[package]
+name = "replication-0082-motorway"
+version = "0.1.0"
+description = "Module 0082: Motorway (2025)"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }
