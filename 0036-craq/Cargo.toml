@@ -1,0 +1,15 @@
+[package]
+name = "replication-0036-craq"
+version = "0.1.0"
+description = "Module 0036: CRAQ -- Chain Replication with Apportioned Queries"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }
