@@ -1,0 +1,15 @@
+[package]
+name = "replication-0048-spinning"
+version = "0.1.0"
+description = "Module 0048: Spinning (Veronese et al. 2009)"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }
