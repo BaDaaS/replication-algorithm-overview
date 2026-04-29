@@ -63,6 +63,7 @@ members = [
     "0059-hotstuff-2",
     "0060-streamlet",
     "0061-pala-pili",
+    "0062-sync-hotstuff",
     "crates/sim",
 ]
 
