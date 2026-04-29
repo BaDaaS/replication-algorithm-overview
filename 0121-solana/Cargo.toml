@@ -1,0 +1,15 @@
+[package]
+name = "replication-0121-solana"
+version = "0.1.0"
+description = "Module 0121: Solana Proof-of-History + Tower BFT (Yakovenko 2018, Solana Labs 2020)"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }
