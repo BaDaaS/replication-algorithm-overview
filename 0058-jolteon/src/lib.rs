@@ -12,7 +12,7 @@ pub fn commit_chain_length(family: ChainFamily) -> usize {
     }
 }
 
-/// HotStuff vs Jolteon chain-length classification.
+/// `HotStuff` vs Jolteon chain-length classification.
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum ChainFamily {
     /// `HotStuff`: three-chain commit.
