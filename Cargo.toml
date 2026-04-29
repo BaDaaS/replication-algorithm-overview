@@ -84,6 +84,7 @@ members = [
     "0080-autobahn",
     "0081-bbca-chain",
     "0082-motorway",
+    "0083-bitcoin",
     "crates/sim",
 ]
 
