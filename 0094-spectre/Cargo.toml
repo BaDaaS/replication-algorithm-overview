@@ -1,0 +1,15 @@
+[package]
+name = "replication-0094-spectre"
+version = "0.1.0"
+description = "Module 0094: SPECTRE block-DAG (Sompolinsky-Lewenberg-Zohar 2016)"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }
