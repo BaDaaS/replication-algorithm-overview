@@ -73,6 +73,7 @@ members = [
     "0069-hashgraph",
     "0070-aleph",
     "0071-dag-rider",
+    "0072-narwhal-tusk",
     "crates/sim",
 ]
 
