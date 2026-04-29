@@ -92,6 +92,7 @@ members = [
     "0088-bitcoin-ng",
     "0089-sleepy",
     "0090-byzcoin",
+    "0091-solida",
     "crates/sim",
 ]
 
