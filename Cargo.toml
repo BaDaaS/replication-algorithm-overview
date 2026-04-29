@@ -94,6 +94,7 @@ members = [
     "0090-byzcoin",
     "0091-solida",
     "0092-hybrid-consensus",
+    "0093-fruitchains",
     "crates/sim",
 ]
 
