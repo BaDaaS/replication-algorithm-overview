@@ -35,6 +35,7 @@ members = [
     "0031-flexible-paxos",
     "0032-compartmentalized-paxos",
     "0033-raft",
+    "0034-zab",
     "crates/sim",
 ]
 
