@@ -1,0 +1,15 @@
+[package]
+name = "replication-0107-casper-cbc"
+version = "0.1.0"
+description = "Module 0107: Casper Correct-By-Construction (Zamfir 2017)"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }
