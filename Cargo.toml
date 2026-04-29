@@ -129,6 +129,7 @@ members = [
     "0125-near",
     "0126-internet-computer",
     "0127-filecoin",
+    "0128-hyperledger-fabric",
     "crates/sim",
 ]
 
