@@ -90,6 +90,7 @@ members = [
     "0086-ghost",
     "0087-selfish-mining",
     "0088-bitcoin-ng",
+    "0089-sleepy",
     "crates/sim",
 ]
 
