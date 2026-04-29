@@ -101,6 +101,7 @@ members = [
     "0097-prism",
     "0098-ohie",
     "0099-conflux",
+    "0100-stellar-scp",
     "crates/sim",
 ]
 
