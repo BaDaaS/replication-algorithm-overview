@@ -87,6 +87,7 @@ members = [
     "0083-bitcoin",
     "0084-bitcoin-backbone",
     "0085-pass-seeman-shelat",
+    "0086-ghost",
     "crates/sim",
 ]
 
