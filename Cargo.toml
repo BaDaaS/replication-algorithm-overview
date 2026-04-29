@@ -46,6 +46,7 @@ members = [
     "0042-pbft",
     "0043-qu",
     "0044-hq",
+    "0045-zyzzyva",
     "crates/sim",
 ]
 
