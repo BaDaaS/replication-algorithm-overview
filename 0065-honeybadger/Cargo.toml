@@ -1,0 +1,15 @@
+[package]
+name = "replication-0065-honeybadger"
+version = "0.1.0"
+description = "Module 0065: HoneyBadger BFT (Miller et al. 2016)"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }
