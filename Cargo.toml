@@ -109,6 +109,7 @@ members = [
     "0105-slasher",
     "0106-casper-ffg",
     "0107-casper-cbc",
+    "0108-algorand",
     "crates/sim",
 ]
 
