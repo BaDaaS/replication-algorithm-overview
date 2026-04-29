@@ -123,6 +123,7 @@ members = [
     "0119-cosmos-cometbft",
     "0120-polkadot",
     "0121-solana",
+    "0122-aptos",
     "crates/sim",
 ]
 
