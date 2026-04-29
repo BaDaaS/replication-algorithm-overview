@@ -1,0 +1,17 @@
+[package]
+name = "replication-0102-avalanche"
+version = "0.1.0"
+description = "Module 0102: Avalanche / Snow* family (Team Rocket / Yin et al. 2018)"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+rand = { workspace = true }
+rand_chacha = { workspace = true }
+sim = { workspace = true }

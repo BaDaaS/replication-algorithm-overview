@@ -103,6 +103,7 @@ members = [
     "0099-conflux",
     "0100-stellar-scp",
     "0101-ripple",
+    "0102-avalanche",
     "crates/sim",
 ]
 
