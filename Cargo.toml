@@ -41,6 +41,7 @@ members = [
     "0037-spanner-truetime",
     "0038-caspaxos",
     "0039-atlas",
+    "0040-rampart",
     "crates/sim",
 ]
 
