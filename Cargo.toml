@@ -38,6 +38,7 @@ members = [
     "0034-zab",
     "0035-chain-replication",
     "0036-craq",
+    "0037-spanner-truetime",
     "crates/sim",
 ]
 
