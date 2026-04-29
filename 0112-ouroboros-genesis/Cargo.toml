@@ -1,0 +1,15 @@
+[package]
+name = "replication-0112-ouroboros-genesis"
+version = "0.1.0"
+description = "Module 0112: Ouroboros Genesis (Badertscher-Gazi-Kiayias-Russell-Zikas CCS 2018)"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }

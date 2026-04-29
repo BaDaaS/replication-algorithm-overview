@@ -113,6 +113,7 @@ members = [
     "0109-snow-white",
     "0110-ouroboros-classic",
     "0111-ouroboros-praos",
+    "0112-ouroboros-genesis",
     "crates/sim",
 ]
 
