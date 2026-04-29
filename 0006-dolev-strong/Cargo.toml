@@ -1,0 +1,15 @@
+[package]
+name = "replication-0006-dolev-strong"
+version = "0.1.0"
+description = "Module 0006: Dolev-Strong round-complexity lower bound for synchronous Byzantine agreement"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }
