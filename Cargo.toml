@@ -6,6 +6,7 @@ members = [
     "0002-failure-models",
     "0003-two-generals",
     "0004-byzantine-generals",
+    "0005-flp-impossibility",
     "crates/sim",
 ]
 
