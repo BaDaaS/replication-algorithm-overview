@@ -64,6 +64,7 @@ members = [
     "0060-streamlet",
     "0061-pala-pili",
     "0062-sync-hotstuff",
+    "0063-sbft",
     "crates/sim",
 ]
 

@@ -1,0 +1,15 @@
+[package]
+name = "replication-0063-sbft"
+version = "0.1.0"
+description = "Module 0063: SBFT (Gueta et al. 2019)"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }
