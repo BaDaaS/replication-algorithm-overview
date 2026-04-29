@@ -59,6 +59,7 @@ members = [
     "0055-tendermint",
     "0056-hotstuff",
     "0057-librabft-diembft",
+    "0058-jolteon",
     "crates/sim",
 ]
 
