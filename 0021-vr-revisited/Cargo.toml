@@ -1,0 +1,15 @@
+[package]
+name = "replication-0021-vr-revisited"
+version = "0.1.0"
+description = "Module 0021: VR Revisited (Liskov-Cowling 2012)"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+sim = { workspace = true }

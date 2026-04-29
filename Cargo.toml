@@ -22,6 +22,7 @@ members = [
     "0018-common-coins",
     "0019-2pc-3pc",
     "0020-viewstamped-replication",
+    "0021-vr-revisited",
     "crates/sim",
 ]
 
