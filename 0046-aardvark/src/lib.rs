@@ -15,7 +15,7 @@ impl PerfMonitor {
     /// Returns true if the observed throughput is below the
     /// threshold.
     #[must_use]
-    pub fn should_view_change(&self, observed: u32) -> bool {
+    pub fn should_view_change(self, observed: u32) -> bool {
         observed < self.threshold_ops_per_sec
     }
 }
