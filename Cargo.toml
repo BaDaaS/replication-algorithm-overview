@@ -78,6 +78,7 @@ members = [
     "0074-cordial-miners",
     "0075-shoal",
     "0076-mysticeti",
+    "0077-mahi-mahi",
     "crates/sim",
 ]
 
